@@ -1,0 +1,85 @@
+#main {
+  width: 1366px;
+  height: 420px;
+  background-color: #ffcd9e;
+  display: flex;
+  justify-content: space-around;
+}
+/* content part of webpage consisting of written content and input fields */
+#content {
+  margin: 20px;
+  width: 530px;
+}
+.content-element {
+  margin: 23px;
+}
+#content-heading {
+  font-family: "inter";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
+#message-1 {
+  font-family: "Inter";
+  font-weight: 500;
+}
+#message-2 {
+  font-family: "Inter";
+  font-weight: 800;
+}
+/* input field and button start */
+#input-field {
+  border: 2px solid black;
+  font-family: "inter";
+  padding-left: 15px;
+  border-radius: 8px;
+  height: 40px;
+  width: 300px;
+  font-size: 15px;
+}
+#input-submit {
+  background-color: #282828;
+  height: 40px;
+  width: 150px;
+  color: white;
+  font-family: "inter";
+  font-size: 13px;
+  border-radius: 8px;
+}
+/* input field and button end */
+#message-3 {
+  font-family: "inter";
+  font-weight: 500;
+  width: 300px;
+  color: white;
+  text-align: center;
+}
+
+/* footer containing two unordered lists */
+#footer {
+  width: 1366px;
+  height: 210px;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+.list-item {
+  margin: 8px;
+}
+#footer-left {
+  list-style-type: none;
+  position: relative;
+  left: 100px;
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
+}
+#footer-right {
+  list-style-type: none;
+  position: relative;
+  right: 150px;
+  text-align: right;
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
+}
