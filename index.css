@@ -1,17 +1,25 @@
+body{
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+ul{
+  padding: 0;
+}
 #main {
-  width: 1366px;
-  height: 420px;
   background-color: #ffcd9e;
   display: flex;
+  flex-direction: row;
+  flex-grow: 1;
   justify-content: space-around;
+  align-items: center;
 }
+
+
 /* content part of webpage consisting of written content and input fields */
 #content {
-  margin: 20px;
-  width: 530px;
-}
-.content-element {
-  margin: 23px;
+  margin-left: 2rem;
 }
 #content-heading {
   font-family: "inter";
@@ -27,59 +35,71 @@
   font-family: "Inter";
   font-weight: 800;
 }
+.content-element {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 /* input field and button start */
 #input-field {
   border: 2px solid black;
   font-family: "inter";
-  padding-left: 15px;
-  border-radius: 8px;
-  height: 40px;
-  width: 300px;
-  font-size: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 #input-submit {
   background-color: #282828;
-  height: 40px;
-  width: 150px;
+  padding: 0.8rem 1.6rem;
   color: white;
   font-family: "inter";
   font-size: 13px;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 /* input field and button end */
 #message-3 {
   font-family: "inter";
   font-weight: 500;
-  width: 300px;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 /* footer containing two unordered lists */
 #footer {
-  width: 1366px;
-  height: 210px;
   background-color: #282828;
   display: flex;
   justify-content: space-between;
 }
 .list-item {
-  margin: 8px;
+  padding: 0.5rem;
 }
 #footer-left {
   list-style-type: none;
-  position: relative;
-  left: 100px;
+  margin-left: 2rem; 
   color: white;
   font-family: "Inter";
   font-weight: 400;
 }
 #footer-right {
   list-style-type: none;
-  position: relative;
-  right: 150px;
   text-align: right;
+  margin-right: 2rem;
   color: white;
   font-family: "Inter";
   font-weight: 400;
+}
+
+@media only screen and (max-width: 1200px){
+  #main{
+    flex-direction: column;
+  }
+  #main img{width: 100%;}
+  #content {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .content-element{
+    justify-content: center;
+  }
 }
